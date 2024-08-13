@@ -3,7 +3,7 @@ package classworks
 class Cw8Strings {
 }
 
-fun main(){
+fun main() {
     val str = "   This is my email: dad@gmail.com   "
     val result = str.indexOf("@")
     val result1 = str.reversed()
@@ -17,14 +17,12 @@ fun main(){
     val result7 = str.isNullOrEmpty()
 
 
-    println(result)
-
     checkMailDomain(str)
     getNameId()
 
 }
 
-fun checkMailDomain(str: String){
+fun checkMailDomain(str: String) {
     val index = str.indexOf("@")
     val answer = str.substring(index + 1)
     println(answer)
@@ -32,14 +30,23 @@ fun checkMailDomain(str: String){
 }
 
 // id [10] - name [Tom]
-fun getNameId(){
+fun getNameId() {
     val str = "id [10] - name [Tom]"
     val res1 = str.indexOf("[")
     val res2 = str.indexOf("]")
-    val answer1 = str.substring(res1 +1, res2)
+    val answer1 = str.substring(res1 + 1, res2)
     val res3 = str.lastIndexOf("[")
     val res4 = str.lastIndexOf("]")
     val answer2 = str.substring(res3 + 1, res4)
     println("His name : $answer2 , and Id: $answer1")
 
 }
+
+
+fun reverseLetter(str: String): String {
+    val result = str.filter { it.isLetter() }
+    return result.reversed()
+}
+
+
+

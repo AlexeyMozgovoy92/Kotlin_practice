@@ -12,8 +12,8 @@ repositories {
 dependencies {
 
     implementation("com.google.code.gson:gson:2.10.1")
-
-    testImplementation("org.jetbrains.kotlin:kotlin-test")
+    implementation("org.hamcrest:hamcrest:2.2")
+    implementation("org.jetbrains.kotlin:kotlin-test")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.0")
     testImplementation("org.junit.jupiter:junit-jupiter-params:5.10.2")
     testImplementation("io.mockk:mockk:1.12.0")

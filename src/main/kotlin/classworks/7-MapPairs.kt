@@ -1,5 +1,9 @@
 package classworks
 
+fun main (){
+    searcherSecondPair()
+}
+
 fun task7() {
     val map5: Map<Int, String> = mapOf(
         1 to "one",
@@ -12,7 +16,7 @@ fun task7() {
     }
 }
 
-fun sercherSecoundPair() {
+fun searcherSecondPair() {
     val pairToKeyMap: Map<Pair<String, Int>, String> = mapOf(
         Pair("one", 1) to "first",
         Pair("two", 2) to "second",
@@ -20,7 +24,7 @@ fun sercherSecoundPair() {
     )
 
     // второе значение для поиска
-    val targetValue = pairToKeyMap.getValue(Pair("two", 2))
+    val targetValue = pairToKeyMap.getValue(Pair("t wo", 2))
     println(targetValue)
 
     for ((key, value) in pairToKeyMap) {

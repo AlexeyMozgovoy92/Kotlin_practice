@@ -1,14 +1,12 @@
 package classworks
 
 
-
-fun main(){
+fun main() {
     val array2: Array<Int?> = arrayOfNulls(10)
-    for (i in array2.indices){
+    for (i in array2.indices) {
         array2[i] = i + 1
     }
     println(array2.joinToString(" ,"))
-
 
 
     val list: MutableList<Int> = mutableListOf(1, 2)
@@ -20,7 +18,6 @@ fun main(){
 
 
 }
-
 
 
 class Homework6 {
@@ -43,13 +40,13 @@ class Homework6 {
         val set: MutableSet<Int> = mutableSetOf(1, 2, 3, 4)
         set.remove(1)
 
-        val result = set.filter { it % 2 ==0 } //выводит только четные
+        val result = set.filter { it % 2 == 0 } //выводит только четные
 
         println(result.joinToString(", "))
 
-        val arrayEmpty: Array<Int> = arrayOf(1, 2, 3 )
+        val arrayEmpty: Array<Int> = arrayOf(1, 2, 3)
 
-        for(i in arrayEmpty.indices){
+        for (i in arrayEmpty.indices) {
             arrayEmpty[i] = 0
         }
 
@@ -69,15 +66,16 @@ class Homework6 {
         println(litov)
 
     }
+
     //поиск по list
     fun findB(list: List<String>): Boolean {
-        for(i in list) {
-            if(i =="B") return true
+        for (i in list) {
+            if (i == "B") return true
         }
         return false
     }
 
-    fun arrayCopy(ar: Array<Int>, ar2: Array<Int>) : Array<Int> {
+    fun arrayCopy(ar: Array<Int>, ar2: Array<Int>): Array<Int> {
         if (ar.size > ar2.size) {
             for (i in ar2.indices) {
                 ar[i] = ar2[i]
@@ -89,6 +87,5 @@ class Homework6 {
             }
             return ar2
         }
-
     }
 }

@@ -3,7 +3,7 @@ package finalProject
 import java.time.LocalDateTime
 
 class BookingManagerImpl : BookingManager {
-    override fun createBooking(booking: Booking) {
+    override fun createBooking(booking: Booking): String {
         TODO("Not yet implemented")
     }
 

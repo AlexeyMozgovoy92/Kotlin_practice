@@ -24,10 +24,10 @@ fun main() {
     }
 
     //use  (use - closeable)
-    File("example.txt").inputStream().use{
-        val content = it.readBytes()
-        println(content.size)
-    }
+//    File("example.txt").inputStream().use{
+//        val content = it.readBytes()
+//        println(content.size)
+//    }
 
     // apply
     val list3 = mutableListOf<String>().apply{
@@ -57,7 +57,18 @@ val size = str?.let{
 fun m(arg: MutableList<String>) {
     with(arg) {
         add("4")
+        println(this)
     }
 }
+
+    val list1 = mutableListOf("one", "two").apply {
+        this.add(2, "three")
+    }
+    list1.forEach{
+        println(it)
+    }
+
+    m(list1)
+
 }
 
